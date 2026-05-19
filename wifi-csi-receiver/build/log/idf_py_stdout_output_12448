@@ -1,0 +1,258 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Projet_Wifi_Sensor\wifi-csi-receiver\build\wifi-csi-receiver.elf C:\Projet_Wifi_Sensor\wifi-csi-receiver\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM6'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (26) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Apr 28 2026 14:33:08[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v1.0[0m
+[0;32mI (30) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (34) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=189c4h (100804) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=000289ec vaddr=3ffb0000 size=04338h ( 17208) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0002cd2c vaddr=40080000 size=032ech ( 13036) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=81efch (532220) map[0m
+[0;32mI (314) esp_image: segment 4: paddr=000b1f24 vaddr=400832ec size=14d48h ( 85320) load[0m
+[0;32mI (347) esp_image: segment 5: paddr=000c6c74 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (359) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (359) boot: Disabling RNG early entropy source...[0m
+[0;32mI (370) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (380) app_init: Application information:[0m
+[0;32mI (384) app_init: Project name:     wifi-csi-receiver[0m
+[0;32mI (389) app_init: App version:      1[0m
+[0;32mI (392) app_init: Compile time:     Apr 28 2026 14:32:35[0m
+[0;32mI (397) app_init: ELF file SHA256:  37d56e253...[0m
+[0;32mI (401) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (405) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (409) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (413) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (417) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (423) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (428) heap_init: At 3FFB8660 len 000279A0 (158 KiB): DRAM[0m
+[0;32mI (434) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (439) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 40098034 len 00007FCC (31 KiB): IRAM[0m
+[0;32mI (451) spi_flash: detected chip: generic[0m
+[0;32mI (453) spi_flash: flash io: dio[0m
+[0;33mW (456) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (470) main_task: Started on CPU0[0m
+[0;32mI (480) main_task: Calling app_main()[0m
+[0;32mI (510) wifi:wifi driver task: 3ffc064c, prio:23, stack:6656, core=0[0m
+[0;32mI (520) wifi:wifi firmware version: 0947e8b[0m
+[0;32mI (520) wifi:wifi certification version: v7.0[0m
+[0;32mI (520) wifi:config NVS flash: enabled[0m
+[0;32mI (520) wifi:config nano formatting: disabled[0m
+[0;32mI (530) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (530) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (530) wifi:Init management short buffer num: 32[0m
+[0;32mI (540) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (540) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (550) wifi:Init static rx buffer num: 10[0m
+[0;32mI (550) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (560) wifi_init: rx ba win: 6[0m
+[0;32mI (560) wifi_init: accept mbox: 6[0m
+[0;32mI (560) wifi_init: tcpip mbox: 32[0m
+[0;32mI (560) wifi_init: udp mbox: 6[0m
+[0;32mI (570) wifi_init: tcp mbox: 6[0m
+[0;32mI (570) wifi_init: tcp tx win: 5760[0m
+[0;32mI (570) wifi_init: tcp rx win: 5760[0m
+[0;32mI (580) wifi_init: tcp mss: 1440[0m
+[0;32mI (580) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (580) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (590) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (660) wifi:mode : sta (3c:71:bf:9a:0f:28)[0m
+[0;32mI (660) wifi:enable tsf[0m
+[0;32mI (680) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (680) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1770) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2770) wifi:state: assoc -> init (0x400)[0m
+[0;32mI (2780) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2780) CSI_USB: retry to connect[0m
+[0;32mI (5200) CSI_USB: retry to connect[0m
+[0;32mI (5210) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5210) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6300) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6330) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6370) wifi:connected with Nothing_Phone_3a_Pro, aid = 8, channel 1, BW20, bssid = 16:e7:c2:a7:99:99[0m
+[0;32mI (6370) wifi:security: WPA3-SAE H2E, phy: bgn, rssi: -30, cipher(pairwise:0x3, group:0x3), pmf:1[0m
+[0;32mI (6380) wifi:pm start, type: 1[0m
+
+[0;32mI (6380) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6390) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (6400) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (6430) wifi:<ba-add>idx:0 (ifx:0, 16:e7:c2:a7:99:99), tid:0, ssn:0, winSize:64[0m
+[0;32mI (7450) esp_netif_handlers: sta ip: 10.76.120.61, mask: 255.255.255.0, gw: 10.76.120.31[0m
+[0;32mI (7450) CSI_USB: Connected to WiFi[0m
+[0;32mI (7450) CSI_USB: WiFi STA started and connected[0m
+[0;32mI (7450) wifi:ic_enable_sniffer[0m
+[0;32mI (7450) CSI_USB: CSI USB ready[0m
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,6325650
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,6451045
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,6610013
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,6672799
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,6694159
+CSI,128,-84,0,0,C0:95:6D:9A:08:7D,6776295
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,6870452
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,6893969
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,6975383
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,7133246
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7146987
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7147226
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7281773
+CSI,128,-85,0,0,0E:A0:6D:7A:A5:87,7499517
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7575169
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7657471
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,7720052
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,7735283
+CSI,128,-95,0,0,B2:48:A6:32:C6:E9,7897253
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,7909256
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,8023848
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,8201507
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,8805594
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,8889319
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,8918174
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,9130292
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,9193723
+CSI,128,-85,0,0,0E:A0:6D:7A:A5:87,9590721
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,9788564
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,10013643
+CSI,128,-88,0,0,0E:A0:6D:7A:A5:87,10176604
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,10556473
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,10575658
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,10636073
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,10704292
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,10804046
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,10881051
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,10935423
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,10955271
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,11036042
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,11159631
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,11290717
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,11343158
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,11448498
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,11548050
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,11774044
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,11878861
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,11957835
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,12272720
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,12391993
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,12486292
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,12509620
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,12730843
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,12797009
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,12822653
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,12899550
+CSI,128,-88,0,0,0E:A0:6D:7A:A5:87,12927541
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,13084014
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,13116474
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,13260657
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,13437248
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,13493798
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,13518502
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,13778908
+CSI,128,-85,0,0,0E:A0:6D:7A:A5:87,13844587
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,13949620
+CSI,128,-85,0,0,0E:A0:6D:7A:A5:87,13977729
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,14058512
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,14210411
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,14303208
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,14826480
+CSI,128,-85,0,0,0E:A0:6D:7A:A5:87,14892097
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,14915453
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,14998231
+CSI,128,-91,0,0,B2:48:A6:32:C6:E9,15072261
+CSI,128,-91,0,0,B2:48:A6:32:C6:E9,15096011
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,15132134
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,15155037
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,15234426
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,15416388
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,15481900
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,15543801
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,15666476
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,15968307
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,16074095
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,16123142
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,16123390
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,16258412
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,16402467
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,16530538
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,16565730
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,16598100
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,16668184
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,16690415
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,16923603
+CSI,128,-88,0,0,0E:A0:6D:7A:A5:87,17122270
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17175658
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17283285
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,17315048
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17338184
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17631840
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17692152
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17794414
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,17896788
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,17977152
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,18042791
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,18144005
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,18176858
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,18330300
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,18354021
+CSI,128,-88,0,0,0E:A0:6D:7A:A5:87,18567137
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,18633540
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,19091377
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,19373766
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,19615945
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,19863969
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,19944788
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,20010709
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,20040991
+CSI,128,-87,0,0,18:26:49:9E:F0:25,20215989
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,20273044
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,20456765
+CSI,128,-92,0,0,B2:48:A6:32:C6:E9,20603053
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,20664212
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,20729741
+CSI,128,-85,0,0,C0:95:6D:9A:08:7D,20889237
+CSI,128,-92,0,0,B2:48:A6:32:C6:E9,21155810
+CSI,128,-91,0,0,B2:48:A6:32:C6:E9,21473983
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,21635153
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,21922870
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,22095332
+CSI,128,-88,0,0,C0:95:6D:9A:08:7D,22141609
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,22160215
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,22339771
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,22508079
+CSI,128,-89,0,0,B2:48:A6:32:C6:E9,22539164
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,22639227
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,22683716
+CSI,128,-86,0,0,0E:A0:6D:7A:A5:87,22749404
+CSI,128,-93,0,0,B2:48:A6:32:C6:E9,22753965
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,22814854
+CSI,128,-91,0,0,B2:48:A6:32:C6:E9,22847762
+CSI,128,-86,0,0,C0:95:6D:9A:08:7D,23152307
+CSI,128,-89,0,0,B2:48:A6:32:C6:E9,23205995
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,23210106
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,23273690
+CSI,128,-91,0,0,B2:48:A6:32:C6:E9,23356388
+CSI,128,-90,0,0,B2:48:A6:32:C6:E9,23364598
+CSI,128,-87,0,0,C0:95:6D:9A:08:7D,23528811
+CSI,128,-87,0,0,0E:A0:6D:7A:A5:87,23732370
+CSI,128,-92,0,0,B2:48:A6:32:C6:E9,23735365
+CSI,128,-90,0,0,B2:48:A6:32:C6:E9,24013577

@@ -1,0 +1,2 @@
+source C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/bootloader/gdbinit/symbols
+source C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/bootloader/gdbinit/connect

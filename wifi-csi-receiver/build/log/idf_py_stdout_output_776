@@ -1,0 +1,83 @@
+Command: ninja flash
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Projet_Wifi_Sensor\wifi-csi-receiver\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6630 bytes. 0x9d0 bytes (9%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi-csi-receiver.c.obj
+[5/11] Linking C static library esp-idf\main\libmain.a
+[6/11] Generating esp-idf/esp_system/ld/sections.ld
+[7/11] Building C object CMakeFiles/wifi-csi-receiver.elf.dir/project_elf_src_esp32.c.obj
+[8/11] Linking CXX executable wifi-csi-receiver.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/wifi-csi-receiver.bin
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Projet_Wifi_Sensor\wifi-csi-receiver\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/partition_table/partition-table.bin C:/Projet_Wifi_Sensor/wifi-csi-receiver/build/wifi-csi-receiver.bin"
+wifi-csi-receiver.bin binary size 0xb6cc0 bytes. Smallest app partition is 0x100000 bytes. 0x49340 bytes (29%) free.
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.4\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.4 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.4/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Projet_Wifi_Sensor/wifi-csi-receiver/build -P C:/Espressif/frameworks/esp-idf-v5.5.4/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 wifi-csi-receiver.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM6
+Connecting.....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 3c:71:bf:9a:0f:28
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26160 bytes to 16521...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007571... (100 %)
+Wrote 26160 bytes (16521 compressed) at 0x00001000 in 0.8 seconds (effective 257.3 kbit/s)...
+Hash of data verified.
+Compressed 748736 bytes to 475807...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c1b9... (6 %)
+Writing at 0x000246ce... (10 %)
+Writing at 0x0002ef11... (13 %)
+Writing at 0x0003480d... (16 %)
+Writing at 0x0003a5b0... (20 %)
+Writing at 0x0004034e... (23 %)
+Writing at 0x000462bb... (26 %)
+Writing at 0x0004be1d... (30 %)
+Writing at 0x00051da6... (33 %)
+Writing at 0x00057259... (36 %)
+Writing at 0x0005ce34... (40 %)
+Writing at 0x000629b4... (43 %)
+Writing at 0x000681d2... (46 %)
+Writing at 0x0006d862... (50 %)
+Writing at 0x0007333f... (53 %)
+Writing at 0x00079379... (56 %)
+Writing at 0x0007eb7c... (60 %)
+Writing at 0x00084763... (63 %)
+Writing at 0x0008a51e... (66 %)
+Writing at 0x0008fe32... (70 %)
+Writing at 0x00095b79... (73 %)
+Writing at 0x0009b5aa... (76 %)
+Writing at 0x000a0fac... (80 %)
+Writing at 0x000a99d5... (83 %)
+Writing at 0x000af73d... (86 %)
+Writing at 0x000b54b2... (90 %)
+Writing at 0x000bb5cd... (93 %)
+Writing at 0x000c0de4... (96 %)
+Writing at 0x000c695c... (100 %)
+Wrote 748736 bytes (475807 compressed) at 0x00010000 in 10.9 seconds (effective 549.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 357.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
